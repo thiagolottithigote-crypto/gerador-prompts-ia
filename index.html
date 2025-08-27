@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptGenius | Gerador de Prompts para IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🪄 PromptGenius</h1>
+        <p>Gere prompts poderosos para ChatGPT, Gemini e outras IAs</p>
+        
+        <div class="selecionadores">
+            <label for="nichos">Escolha um nicho:</label>
+            <select id="nichos">
+                <option value="">-- Selecione --</option>
+                <option value="youtube">YouTube</option>
+                <option value="tiktok">TikTok</option>
+                <option value="blog">Blog</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="terror">Terror</option>
+            </select>
+
+            <label for="tipoConteudo">Tipo de conteúdo:</label>
+            <select id="tipoConteudo">
+                <option value="">-- Selecione --</option>
+                <option value="roteiro">Roteiro de Vídeo</option>
+                <option value="ideia">Ideia de Conteúdo</option>
+                <option value="email">Email de Vendas</option>
+                <option value="post">Post para Redes Sociais</option>
+            </select>
+        </div>
+
+        <button onclick="gerarPrompt()">✨ Gerar Prompt</button>
+        
+        <div class="resultado">
+            <h3>Seu Prompt:</h3>
+            <textarea id="resultadoPrompt" readonly placeholder="Seu prompt aparecerá aqui..."></textarea>
+            <button onclick="copiarPrompt()">📋 Copiar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
